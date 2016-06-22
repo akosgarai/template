@@ -1,1 +1,2 @@
-My template for angular apps
+My template for angular apps.
+Makefile to rename it.
