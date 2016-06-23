@@ -10,6 +10,7 @@ all:
 createNewProject:
 	@echo "Create new project with name: $(NEWNAME), and angular version: $(ANGULARVERSION)"
 	sed 's/example/$(NEWNAME)/g' example.html > ../$(NEWNAME)/$(NEWNAME).html
+	sed 's/example/$(NEWNAME)/g' karma.conf.js > ../$(NEWNAME)/karma.conf.js
 	sed 's/example/$(NEWNAME)/g' js/example.js > ../$(NEWNAME)/js/$(NEWNAME).js
 	sed 's/example/$(NEWNAME)/g' test/example-test.js > ../$(NEWNAME)/test/$(NEWNAME)-test.js
 
